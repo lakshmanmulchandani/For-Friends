@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hello Arushi</title>
+  </head>
+  <body>
+    <div id="card" class="friend-card">
+      <div class="wrapper">
+        <div class="first-page">
+          <div class="content">
+            <div>
+              <img
+                src="IMG_20210803_134531.jpg"
+                alt="aarushi"
+                class="your-face"
+              />
+            </div>
+            <div class="greeting">Happy Arushi</div>
+          </div>
+          <div class="backface"></div>
+        </div>
+        <div class="second-page">
+          <div class="content">
+            <div class="sal">Hey there,</div>
+            <div class="message"><span style="font-weight: bold"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("card").addEventListener("click", function () {
+        this.classList.toggle("friend-card__open");
+      });
+    </script>
+  </body>
+</html>
